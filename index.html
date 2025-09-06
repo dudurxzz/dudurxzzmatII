@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site sobre Carros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Site dos Carros</h1>
+        <p>Explore diferentes modelos e descubra suas especificações!</p>
+    </header>
+
+    <main>
+        <div class="car-list">
+            <div class="car-item" onclick="mostrarDetalhes('carro1')">
+                <img src="https://cdn.pixabay.com/photo/2016/02/13/13/11/oldtimer-1197800_1280.jpg" alt="Carro 1">
+                <h3>Carro 1</h3>
+            </div>
+            <div class="car-item" onclick="mostrarDetalhes('carro2')">
+                <img src="https://via.placeholder.com/150x100?text=Carro+2" alt="Carro 2">
+                <h3>Carro 2</h3>
+            </div>
+            <div class="car-item" onclick="mostrarDetalhes('carro3')">
+                <img src="https://via.placeholder.com/150x100?text=Carro+3" alt="Carro 3">
+                <h3>Carro 3</h3>
+            </div>
+        </div>
+
+        <div id="detalhes" class="detalhes">
+            <h2>Detalhes do Carro</h2>
+            <p id="descricao"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Site dos Carros</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
